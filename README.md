@@ -12,7 +12,7 @@ a.	Steps to take
 i.	sudo systemctl stop apache2  / sudo service apache2 stop
 ii.	sudo system disable apache2 / sudo update-rc.d apache2 disable
 
-### 4.	↑↑↑Security Measures↓↓↓
+### ↑↑↑Security Measures↓↓↓
 
 Apache 2.4.49 Vulnerable Web-app -- Exploit-DB
 https://www.exploit-db.com/exploits/50383
