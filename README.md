@@ -4,7 +4,7 @@ Apache HTTP
 
 ## ***Things to note***
 
-1.	Default apache runs on 2.4.55
+1.	Current Default apache runs on 2.4.55 (2023 Mar)
 2.	Using “sudo systemctl apache2” will start that version
 
 a.	Check out step by step for how to start 2.4.49
