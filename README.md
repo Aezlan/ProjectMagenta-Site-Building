@@ -7,14 +7,12 @@ Apache HTTP
 1.	Current Default apache runs on 2.4.55 (2023 Mar)
 2.	Using “sudo systemctl apache2” will start that version
 
-a.	Check out step by step for how to start 2.4.49
-3.	If apache.service is started from boot and it’s not the correct version
+## Check out step by step for how to start 2.4.49
+###If apache.service is started from boot and it’s not the correct version
 
-a.	Steps to take
-
-i.	sudo systemctl stop apache2  / sudo service apache2 stop
-
-ii.	sudo system disable apache2 / sudo update-rc.d apache2 disable
+1.	Steps to take
+2.	sudo systemctl stop apache2  / sudo service apache2 stop
+3.	sudo system disable apache2 / sudo update-rc.d apache2 disable
 
 ### ↑↑↑Security Measures↓↓↓
 
