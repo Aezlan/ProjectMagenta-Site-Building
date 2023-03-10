@@ -64,7 +64,7 @@ Conversion: dot ( . ) → %2e → %%32%65
 ❖	e is encoded to %65
 ❖	Original % remained the same
 
-# Source: https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2021-41773
+## Source: https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2021-41773
 
 
 According to the source above ↑↑ this vulnerability allows us to exploit the cgi-bin folder using path transversal and remote code execution techniques.
