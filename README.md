@@ -8,7 +8,7 @@ Apache HTTP
 2.	Using “sudo systemctl apache2” will start that version
 
 ## Check out step by step for how to start 2.4.49
-###If apache.service is started from boot and it’s not the correct version
+### If apache.service is started from boot and it’s not the correct version
 
 1.	Steps to take
 2.	sudo systemctl stop apache2  / sudo service apache2 stop
@@ -19,7 +19,7 @@ Apache HTTP
 Apache 2.4.49 Vulnerable Web-app -- Exploit-DB
 https://www.exploit-db.com/exploits/50383
 
-Installation Step by step
+### Installation Step by step
 Wget https://www.exploit-db.com/apps/1edb1895661473ea530209e29b83a982-httpd-2.4.49.tar.gz
 Following download completion
 tar -xvf 
@@ -37,14 +37,14 @@ php code should be in /usr/local/apache2/htdocs/
 blog directory should be made here
 “renamethis”.php should be in this directory 
 
-How does this did we configure this to work properly
+### How does this did we configure this to work properly
 
 Vulnerable configuration:
 
 httpd.conf
 mod_cgi
 
-Why is it vulnerable?
+### Why is it vulnerable?
 1.	The vulnerability lies within the httpd.conf file
 2.	The misconfigured file has this following code
 a.	<Directory /> Require all granted</Directory>
@@ -52,7 +52,7 @@ a.	<Directory /> Require all granted</Directory>
 4.	Ex. /cgi-bin/.%%32%65/.%%32%65/.%%32%65/.%%32%65/etc/passwd
 5.	This command is used within the linux cli with the curl command.
 
-Remote code execution vulnerability
+### Remote code execution vulnerability
 1.	The RCE vulnerability takes place at the mod_cgi
 2.	This module is enabled on the apache server and has the following:
 a.	<IfModule !mpm_prefork_module> LoadModule cgid_module modules/mod_cgid.so </IfModule>
@@ -60,7 +60,7 @@ a.	<IfModule !mpm_prefork_module> LoadModule cgid_module modules/mod_cgid.so </I
 4.	Ex. /cgi-bin/.%%32%65/.%%32%65/.%%32%65/.%%32%65/bin/sh
 5.	This is also used within the linux cli with the curl command
 
-URL Encoding explanation:
+### URL Encoding explanation:
 
 Conversion: dot ( . ) → %2e → %%32%65
 
