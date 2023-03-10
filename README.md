@@ -15,25 +15,25 @@ ii.	sudo system disable apache2 / sudo update-rc.d apache2 disable
 ### 4.	↑↑↑Security Measures↓↓↓
 
 Apache 2.4.49 Vulnerable Web-app -- Exploit-DB
-❖	https://www.exploit-db.com/exploits/50383
+https://www.exploit-db.com/exploits/50383
 
 Installation Step by step
-❖	Wget https://www.exploit-db.com/apps/1edb1895661473ea530209e29b83a982-httpd-2.4.49.tar.gz
-❖	Following download completion
-➢	tar -xvf 
-❖	Once extracted the extracted directory is named httpd-2.4.49
-➢	cd into the directory 
-➢	sudo apt-get install libapr1-dev libaprutil1-dev
-➢	sudo apt-get install libpcre3-dev
-❖	./configure
-❖	After configuration complete
-➢	sudo make
-➢	sudo make install
-❖	Host the Apache service by running the command:
-➢	sudo /usr/local/apache2/bin/apachectl start
-❖	php code should be in /usr/local/apache2/htdocs/
-➢	blog directory should be made here
-■	“renamethis”.php should be in this directory 
+Wget https://www.exploit-db.com/apps/1edb1895661473ea530209e29b83a982-httpd-2.4.49.tar.gz
+Following download completion
+tar -xvf 
+Once extracted the extracted directory is named httpd-2.4.49
+cd into the directory 
+sudo apt-get install libapr1-dev libaprutil1-dev
+sudo apt-get install libpcre3-dev
+./configure
+After configuration complete
+sudo make
+sudo make install
+Host the Apache service by running the command:
+sudo /usr/local/apache2/bin/apachectl start
+php code should be in /usr/local/apache2/htdocs/
+blog directory should be made here
+“renamethis”.php should be in this directory 
 
 How does this did we configure this to work properly
 
@@ -62,11 +62,11 @@ URL Encoding explanation:
 
 Conversion: dot ( . ) → %2e → %%32%65
 
-❖	2 is encoded to %32
+2 is encoded to %32
 
-❖	e is encoded to %65
+e is encoded to %65
 
-❖	Original % remained the same
+Original % remained the same
 
 ## Source: https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2021-41773
 
