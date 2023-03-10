@@ -59,9 +59,13 @@ a.	<IfModule !mpm_prefork_module> LoadModule cgid_module modules/mod_cgid.so </I
 5.	This is also used within the linux cli with the curl command
 
 URL Encoding explanation:
+
 Conversion: dot ( . ) → %2e → %%32%65
+
 ❖	2 is encoded to %32
+
 ❖	e is encoded to %65
+
 ❖	Original % remained the same
 
 ## Source: https://httpd.apache.org/security/vulnerabilities_24.html#CVE-2021-41773
