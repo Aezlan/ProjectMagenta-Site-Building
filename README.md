@@ -62,7 +62,7 @@ a.	<IfModule !mpm_prefork_module> LoadModule cgid_module modules/mod_cgid.so </I
 
 ### URL Encoding explanation:
 
-Conversion: dot ( . ) → %2e → %%32%65
+Conversion: dot ( . ) → %2e → %%32%65 (Double Encoded)
 
 2 is encoded to %32
 
